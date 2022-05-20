@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageId"
+        android:layout_width="95dp"
+        android:layout_height="90dp"
+        android:src="@drawable/product"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView android:id="@+id/productId"
+        android:text="Product Name :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="05dp"
+        android:textColor="#3DDC84"
+        android:textSize="21sp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/imageId"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView android:id="@+id/tvProductName"
+        android:text="name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="05dp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintStart_toEndOf="@+id/productId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView android:id="@+id/brandId"
+        android:text="Brand Name :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="05dp"
+        android:textColor="#000080 "
+        android:textSize="21sp"
+        android:textAlignment="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintStart_toEndOf="@+id/imageId"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductName"
+        />
+
+    <TextView android:id="@+id/tvBrandName"
+        android:text=" Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="05dp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/brandId"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductName"
+        />
+
+<!--    <TextView android:id="@+id/tvdescription"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="05dp"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="17sp"-->
+<!--        android:textAlignment="center"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
